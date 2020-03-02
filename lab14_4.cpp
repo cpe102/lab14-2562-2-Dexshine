@@ -19,3 +19,13 @@ int main(){
 }
 
 //Write definition of shuffle() here 
+void shuffle(int &a,int &b,int &c,int &d){
+	int temp[] = {50,100,500,1000};
+	a = temp[rand()%4];
+	
+	b = temp[rand()%4];
+
+	c = temp[rand()%4];
+
+	d = temp[rand()%4];
+}
