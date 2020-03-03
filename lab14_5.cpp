@@ -20,10 +20,18 @@ int main(){
 
 //Write definition of shuffle() using pointer here 
 void shuffle(int *a,int *b,int *c,int *d){
-	int *temp[] = {a,b,c,d};
-	*a = *temp[rand()%4];
-	*b = *temp[rand()%4];
-	*c = *temp[rand()%4];
-	*d = *temp[rand()%4];
+	int temp[] = {50,100,500,1000};
+	int w=0,x=0,y=0,z=0;
+	while(w==x or w==y or w==z or x==y or x==z or y==z){
+		w = rand()%4;
+		x = rand()%4;
+		y = rand()%4;
+		z = rand()%4;
+	}
+	*a = temp[w];
+	*b = temp[x];
+	*c = temp[y];
+	*d = temp[z];
+	
 
 }
